@@ -3,7 +3,9 @@
 First, looking at the grading scheme for this project, I see that that the following rules must be satisfied
 
 --no inline Javascript
+
 --don't modify the .html file directly, modify it dynamically using JavaScript
+
 --code should be commented
 
 The finished product should have a search bar, and pagination links that show 10 records per page.  
