@@ -105,8 +105,6 @@ $search_input.on('input',function() {  													// unlike 'changed', the 'in
 
 	// then we click the first link, so if the search string changes we default back to the first page
 	$("a.pagination-link:contains('1')").click();
-	console.log("booga booga")
-
 
 });
 
