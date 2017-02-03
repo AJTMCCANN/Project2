@@ -1,0 +1,67 @@
+
+input#search_input {
+	border-radius: 10px;
+	float: right;
+}
+
+/* these center the placeholder text in the search input */
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+/* styling the pagination buttons */
+
+.student-list {
+	text-align: center;
+}
+
+.pagination-li {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.pagination-link {
+	border: 1px black solid;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 10px;
+	text-decoration: none;
+	color: black;
+	height: 50%;
+}
+
+.pagination-link:visited {
+	color: black;
+}
+
+.pagination-link:hover {
+	background-color: rgba(0,0,255,0.2);
+}
+
+a.active {
+	background-color: rgba(0,0,255,0.2);
+}
+
+/* Making things look slightly better on small browser windows */
+
+@media (max-width: 433px) {
+	input#search_input {
+		float: left;
+		margin-top: 15px;
+	}
+
+}
+
