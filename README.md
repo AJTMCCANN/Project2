@@ -11,7 +11,7 @@ First, looking at the grading scheme for this project, I see that that the follo
 The finished product should have a search bar, and pagination links that show 10 records per page.  
 When a search yields 0 results, display a message informing the user that no results have been found.  
 
-In the source files I first notice that there is no folder for JavaScript.  So, I create one and link it to the index.html file, just before the </body>.  
+In the source files I first notice that there is no folder for JavaScript.  So, I create one and link it to the index.html file, just before the \</body>.  
 
 Then, I think about whether to implement the pagination first, or the search box.  I decide to do the search box first, because however I implement that will likely change how I go about doing the pagination.  
 
