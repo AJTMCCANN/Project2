@@ -40,7 +40,6 @@ input#search_input {
 	margin: 10px;
 	text-decoration: none;
 	color: black;
-	height: 50%;
 }
 
 .pagination-link:visited {
@@ -53,6 +52,7 @@ input#search_input {
 
 a.active {
 	background-color: rgba(0,0,255,0.2);
+	
 }
 
 /* Making things look slightly better on small browser windows */

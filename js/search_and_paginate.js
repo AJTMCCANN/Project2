@@ -38,6 +38,7 @@ $search_input.on('input',function() {  													// unlike 'changed', the 'in
 	} else {
 		$(".no-results").hide();
 	}
+
 	
 	// next we create and append the pagination links to the unordered list with class .student-list
 
@@ -48,6 +49,12 @@ $search_input.on('input',function() {  													// unlike 'changed', the 'in
 		$pagination_links.append($ith_link)
 	}
 	$student_list.append($pagination_links)
+
+	// hide the pagination link if there is only one to show
+
+	if (number_of_links === 1) {
+		$(".pagination-li").hide();
+	}
 
 	// next we set event handlers on the pagination links so that the most recently clicked link has the class 'active'
 
