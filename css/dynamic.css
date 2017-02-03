@@ -57,10 +57,12 @@ a.active {
 
 /* Making things look slightly better on small browser windows */
 
-@media (max-width: 433px) {
+@media (max-width: 460px) {
 	input#search_input {
 		float: left;
-		margin-top: 15px;
+		clear: both;
+		margin-top: 25px;
+		margin-bottom: 10px;
 	}
 
 }

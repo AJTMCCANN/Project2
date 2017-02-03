@@ -56,6 +56,7 @@ $search_input.on('input',function() {  													// unlike 'changed', the 'in
 		$(".pagination-li").hide();
 	}
 
+
 	// next we set event handlers on the pagination links so that the most recently clicked link has the class 'active'
 
 	var $pagination_links = $("a.pagination-link")
@@ -82,28 +83,31 @@ $search_input.on('input',function() {  													// unlike 'changed', the 'in
 		}
 	});
 
-	console.log(Object.keys(pagination_map).length);
-
 	// this binds event handlers to the pagination links to hide elements that don't conform to the pagination_map
 
-	jQuery.each($pagination_links, function() {
-		$(this).on("click", function() {
-			var active_link = $(".active").text();
-			for (i = 0; i < Object.keys(pagination_map).length; i++) {
-				var $ith_student = $(".student-item").eq(i);
-				if (pagination_map[i] === active_link) {
-					$ith_student.show();
-					console.log($ith_student.is(":visible") + " -- visible");
-				} else {
-					$ith_student.hide();
-					console.log($ith_student.is(":visible") + " -- invisible");
+	function hide_off_page() {
+		jQuery.each($pagination_links, function() {
+			$(this).on("click", function() {
+				var active_link = $(".active").text();
+				for (var i in pagination_map) { 
+					var $ith_student = $(".student-item").eq(i);
+					if (pagination_map[i] === active_link) {
+						$ith_student.show();
+					} else {
+						$ith_student.hide();
+					};
 				};
-			};
+			});
 		});
-	});
+	}
+
+	hide_off_page();
 
 	// then we click the first link, so if the search string changes we default back to the first page
 	$("a.pagination-link:contains('1')").click();
+	console.log("booga booga")
+
+
 });
 
 
