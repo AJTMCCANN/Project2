@@ -1,4 +1,4 @@
-var $search_input = $("<input type='text' name='search_input' id='search_input' placeholder='search names here'>")  
+var $search_input = $("<input type='text' name='search_input' id='search_input' placeholder='search student names' class='student-search'>");
 $(".page-header").append($search_input)																				
 $(".student-list").append($("<p class='no-results'>Sorry, there are no results to show</p>"));
 

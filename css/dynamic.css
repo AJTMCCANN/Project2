@@ -2,6 +2,10 @@
 input#search_input {
 	border-radius: 10px;
 	float: right;
+	box-shadow: 1px 1px 5px #4ba6c3;
+	text-align: center;
+	border: #4ba6c3 solid 2px;
+	height: 25px;
 }
 
 /* these center the placeholder text in the search input */
@@ -34,25 +38,28 @@ input#search_input {
 }
 
 .pagination-link {
-	border: 1px black solid;
-	border-radius: 3px;
+	border: 1px #4ba6c3 solid;
+	border-radius: 10px;
 	padding: 10px;
 	margin: 10px;
 	text-decoration: none;
-	color: black;
+	box-shadow: 1px 1px 5px #4ba6c3;
 }
 
 .pagination-link:visited {
-	color: black;
+	color: 	#4ba6c3;
 }
 
 .pagination-link:hover {
-	background-color: rgba(0,0,255,0.2);
+	background-color: #4ba6c3;
+	color: white;
 }
 
-a.active {
-	background-color: rgba(0,0,255,0.2);
-	
+.active {
+	background-color: #4ba6c3;
+	color: white !important;
+	font-weight: bold;
+
 }
 
 /* Making things look slightly better on small browser windows */
