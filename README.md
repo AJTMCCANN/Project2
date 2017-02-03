@@ -33,7 +33,9 @@ Now those links need to be styled.
 
 I'll need another function that assigns a page number to each of the non-hidden list items.  
 
-Each link when it is clicked should hide all the list items whose assigned page doesn't match the text of the one just clicked. This was the hardest part to do, mainly because of a bug where I used the wrong value for the index i -- instead of the key value from pagination_map, I was using a plain old iterator from i = 0 to i = pagination_map.length.  The result was that everything worked fine as long as there was no search string.  Otherwise, if there was, the pagination links would appear, but would do strange things.  As well, instead of showing only the first 10 results all the results that matched the search string would be visible, however many.  It was a hard bug to fix.  
+Each pagination link should, when it is clicked, receive a flag indicating that it is the active (most recently selected) link.  After that I'll write a function that hides all the list items whose assigned page number doesn't match the active link's text value.  
+
+That last bit (filtering list items by page) was the hardest part to do, mainly because of a bug where I used the wrong value for the index i -- instead of the key value from pagination_map, I was using a plain old iterator from i = 0 to i = pagination_map.length.  The result was that everything worked fine as long as there was no search string.  Otherwise, if there was, the pagination links would do strange things.  As well, instead of showing only the first 10 results all the results that matched the search string would be visible, however many.  It was a hard bug to fix.
 
 	function hide_off_page_students() {
 		jQuery.each($pagination_links, function() {
